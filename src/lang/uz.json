@@ -1,0 +1,44 @@
+{
+	"home": "Asosiy",
+	"products": "Mahsulotlar",
+	"about": "Haqida",
+	"contact": "Bog'lanish",
+	"search": "Qidirish...",
+
+	"mainslider img1": "https://images.zoodmall.uz/app/banner/main_banner_642ad4457bdfc.jpg",
+	"mainslider img2": "https://images.zoodmall.uz/app/banner/main_banner_642421702cff1.jpg",
+	"mainslider img3": "https://images.zoodmall.uz/app/banner/main_banner_642ad51c38a36.png",
+
+	"icons delivery": "Tezkor Yetkazish",
+	"icons ins": "Muddatli to'lov",
+	"icons favorite": "Sevimli brendlar",
+	"icons promotion": "Aksiyalar🔥",
+
+	"flash sale": "Eng yaxshi elektronika x12-gacha muddatli to'lovda",
+	"top brands": "Mashhur brendlar",
+
+	"shop happiness": "Hozir xarid qiling, pulini keyinroq to'lang",
+	"shop happiness t": "Onlayn-xaridlar - taraqqiyot tomonga dadil qadamlarning namoyonidir. Bu sotuvchilar uchun ham, xaridorlar uchun ham qulay: mijoz o’ziga kerakli mahsulotlarni qidirishda vaqt tejaydi. Kerakli mahsulotni tanlashga bir nechagina daqiqa ajratib, qimmat bo’lmagan taklifni topish mumkin va bunda xaridingis uyizga yetkazilib ham beriladi. Shveytsariyaning OrientSwiss kompaniyasi NewStore deb nomlangan B2C formatidagi savdo maydonchasi ilovasini va saytini ishga tushirish orqali onlayn-xaridlarni takomillashtirmoqda va yanada hammabop qilmoqda.",
+
+	"footer connected links": "Ijtimoiy tarmoqlarda biz bilan bog'laning",
+	"footer account": "Akkauntingiz",
+	"footer clothing": "Kiyimlar",
+	"footer help": "Yordam",
+
+	"days": "kunlar",
+	"hours": "soatlar",
+	"minutes": "daqiqalar",
+	"seconds": "soniyalar",
+
+	"latest products": "Eng so'ngi mahsulotlar",
+	"all": "Hammasi",
+	"mens clothing": "Erkaklar kiyimlari",
+	"womens clothing": "Ayollar kiyimlari",
+	"jewelery clothing": "Zargarlik kiyimlari",
+	"electronics": "Elektronika",
+	"buy now": "Sotib olish",
+
+	"about us": "NewStore haqida",
+	"about us t": "NewStore - bu 30 000 dan ortiq mahalliy va xorijiy ishlab chiqaruvchilarning 6 milliondan ortiq mahsulotlari, shu jumladan kiyim-kechak, mobil telefon, elektronika, maishiy texnika, kosmetika, o'yinchoqlar, uy va bog' uchun mahsulotlar taklif qiluvchi 'Hozir sotib ol, pulini keyin to'la' deb nomlanuvchi NewPay savdo maydonchasidir! Siz NewStore da ko'rsatilgan qiymatini mahalliy valyutada to'lab olish sharti bilan yoki NewPay bo'lib to'lash yordamida xarid qilishingiz mumkin. NewPay 4 yoki 6 foizsiz to'lov usullarini yoki yetkazib bergandan so'ng 14 kun ichida foizsiz qoplab beriladigan 'To'lov yetkazib berilgandan keyin bajariladi' opsiyasini taklif qiladi. NewPay ilovasi to'liq onlayn va bo'lib to'lashning ma'qullanishi bir lahzada amalga oshiriladi!",
+	"not found": "Hech narsa topilmadi"
+}

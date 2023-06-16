@@ -1,0 +1,37 @@
+{
+  "user": {
+      "uid": "n7eeQ1oyozXNszxWP4RiWfdIa1K2",
+      "email": "yakubbaev.azamat@mail.ru",
+      "emailVerified": false,
+      "isAnonymous": false,
+      "providerData": [
+          {
+              "providerId": "password",
+              "uid": "yakubbaev.azamat@mail.ru",
+              "displayName": null,
+              "email": "yakubbaev.azamat@mail.ru",
+              "phoneNumber": null,
+              "photoURL": null
+          }
+      ],
+      "stsTokenManager": {
+          "refreshToken": "APZUo0QUv02JJL6Q-VCuIDT1nRavzQRIVmPANqov_0V6z8ruX3X1CjZRaNxhEFA1S6WRHRKiiHJyCMwzj6Ti6RVqeBX9KI5RR23JSOlpmJrrnwblTo77XbYITIZ4weqzdBtBZGRXlQKtnagdWI5HtjBzbaUYPOxiuuMauTgCkfXn6q_WC0mMeybVX4DfYvJ4LLOwe8odjkODtF7XIWL7KX2eVhGM1dDi6w",
+          "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3YmFiYWFiYTEwNWFkZDZiM2ZiYjlmZjNmZjVmZTNkY2E0Y2VkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbXl1cmxzLTI0NzFhIiwiYXVkIjoibXl1cmxzLTI0NzFhIiwiYXV0aF90aW1lIjoxNjg2OTMzNDEzLCJ1c2VyX2lkIjoibjdlZVExb3lvelhOc3p4V1A0UmlXZmRJYTFLMiIsInN1YiI6Im43ZWVRMW95b3pYTnN6eFdQNFJpV2ZkSWExSzIiLCJpYXQiOjE2ODY5MzM0MTMsImV4cCI6MTY4NjkzNzAxMywiZW1haWwiOiJ5YWt1YmJhZXYuYXphbWF0QG1haWwucnUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsieWFrdWJiYWV2LmF6YW1hdEBtYWlsLnJ1Il19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.UpUDAWn58ZqwL9_NE3bTnB6s9zByRQo9LGCcYSvqtElmoSN5eZZdxrOPDlW-VuFi0NJ5Jk4QYEJYLhLDBX_gBBs4XBbdbrkASqnPhf3ChfxuJlR8N6nb_1_T7d2VTOcejsr0N0F6_2FYSu6rZbYxp2bCGHdUfpdqF-zY3EkJrSmC4cEt-vXtWb_b9gwvzcCY4M56YcpgXpWPeViy5YK5e9JjKDduM7aASK-Pw6hGyepKE0cq-qjfjUsWg4fUlXUSZNTg3AfIwb-7FmDXeLCUkY639BlE7lIK_GytkZXwVvHYiis8FZU1sR71bB-iIfZU7QeYTVNeBaF7TmbYTvPrrQ",
+          "expirationTime": 1686937017836
+      },
+      "createdAt": "1686933413595",
+      "lastLoginAt": "1686933413595",
+      "apiKey": "AIzaSyAY7_oJcJUdqgEBXAAwoFxo8YVewgGlFeg",
+      "appName": "[DEFAULT]"
+  },
+  "providerId": null,
+  "_tokenResponse": {
+      "kind": "identitytoolkit#SignupNewUserResponse",
+      "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3YmFiYWFiYTEwNWFkZDZiM2ZiYjlmZjNmZjVmZTNkY2E0Y2VkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbXl1cmxzLTI0NzFhIiwiYXVkIjoibXl1cmxzLTI0NzFhIiwiYXV0aF90aW1lIjoxNjg2OTMzNDEzLCJ1c2VyX2lkIjoibjdlZVExb3lvelhOc3p4V1A0UmlXZmRJYTFLMiIsInN1YiI6Im43ZWVRMW95b3pYTnN6eFdQNFJpV2ZkSWExSzIiLCJpYXQiOjE2ODY5MzM0MTMsImV4cCI6MTY4NjkzNzAxMywiZW1haWwiOiJ5YWt1YmJhZXYuYXphbWF0QG1haWwucnUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsieWFrdWJiYWV2LmF6YW1hdEBtYWlsLnJ1Il19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.UpUDAWn58ZqwL9_NE3bTnB6s9zByRQo9LGCcYSvqtElmoSN5eZZdxrOPDlW-VuFi0NJ5Jk4QYEJYLhLDBX_gBBs4XBbdbrkASqnPhf3ChfxuJlR8N6nb_1_T7d2VTOcejsr0N0F6_2FYSu6rZbYxp2bCGHdUfpdqF-zY3EkJrSmC4cEt-vXtWb_b9gwvzcCY4M56YcpgXpWPeViy5YK5e9JjKDduM7aASK-Pw6hGyepKE0cq-qjfjUsWg4fUlXUSZNTg3AfIwb-7FmDXeLCUkY639BlE7lIK_GytkZXwVvHYiis8FZU1sR71bB-iIfZU7QeYTVNeBaF7TmbYTvPrrQ",
+      "email": "yakubbaev.azamat@mail.ru",
+      "refreshToken": "APZUo0QUv02JJL6Q-VCuIDT1nRavzQRIVmPANqov_0V6z8ruX3X1CjZRaNxhEFA1S6WRHRKiiHJyCMwzj6Ti6RVqeBX9KI5RR23JSOlpmJrrnwblTo77XbYITIZ4weqzdBtBZGRXlQKtnagdWI5HtjBzbaUYPOxiuuMauTgCkfXn6q_WC0mMeybVX4DfYvJ4LLOwe8odjkODtF7XIWL7KX2eVhGM1dDi6w",
+      "expiresIn": "3600",
+      "localId": "n7eeQ1oyozXNszxWP4RiWfdIa1K2"
+  },
+  "operationType": "signIn"
+}
