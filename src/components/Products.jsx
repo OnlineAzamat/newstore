@@ -96,40 +96,32 @@ function Products() {
 						{t('electronics')}
 					</button>
 				</div>
-				{filter[0] ? (
-					filter.map((products) => {
-						return (
-							<>
-								<div
-									className="col-md-3 col-3 mt-2 mb-2 p-1"
-									key={products.id + products.price}
-								>
-									<div className="card">
+				<div className="cards">
+					{filter[0] ? (
+						filter.map((products) => {
+							return (
+								<Link to={`/products/${products.id}`} className="card__card" key={products.id + products.price}>
+									<div className="card-img-container">
 										<img
 											src={products.image}
-											className="card-img-top product-img"
 											alt="card-img"
 										/>
-										<div className="card-body">
-											<h5 className="card-title">
-												{products.title.substring(0, 15)}
-											</h5>
-											<p className="card-text">${products.price}</p>
-											<Link
-												to={`/products/${products.id}`}
-												className="btn btn-primary"
-											>
-												{t('buy now')}
-											</Link>
-										</div>
+										<button className='favorite-card__button'><i className='bi bi-heart'></i></button>
 									</div>
-								</div>
-							</>
-						);
-					})
-				) : (
-					<NotFound />
-				)}
+									<div className="card-body">
+										<h5 className="card-title">
+											{products.title.substring(0, 15)}
+										</h5>
+										<h6 className="installment-badge mt-1">${Math.floor(products.price / 1.2) / 10}/month</h6>
+										<h5 className="card-text">${products.price}</h5>
+									</div>
+								</Link>
+							);
+						})
+					) : (
+						<NotFound />
+					)}
+				</div>
 			</>
 		);
 	};
@@ -166,7 +158,7 @@ function Products() {
 							placeholder="max"
 						/>
 					</div>
-					<button className="btn btn-primary" onClick={() => priceFilter()}>
+					<button className="btn btn-warning" onClick={() => priceFilter()}>
 						Submit
 					</button>
 				</div>

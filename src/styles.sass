@@ -206,8 +206,64 @@ a
 .products-container
     display: flex
 
-    .product-img
-        padding: 2rem
+    .cards
+        display: grid
+        grid-template-columns: repeat(5, 1fr)
+        gap: 1rem
+
+        .card__card
+            text-decoration: none
+            color: #000
+            cursor: pointer
+            transition: 0.25s
+
+            .card-img-container
+                height: 250px
+                position: relative
+                border: 1px solid #ddd
+                border-radius: 10px
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 1rem
+                overflow: hidden
+                &:hover
+                    img
+                        transform: scale(1.03)
+                
+                img
+                    width: calc(100% - 2rem)
+                    height: calc( 250px - 2rem )
+                    object-fit: contain
+                    transition: 0.25s
+                .favorite-card__button
+                    position: absolute
+                    top: 0.5rem
+                    right: 0.5rem
+                    border: none
+                    outline: none
+                    background: none
+                    font-size: 1.2rem
+                    border-radius: 50%
+                    background: #fff
+
+            &:hover
+                -webkit-box-shadow: 0 8px 10px -10px #bdbdbd
+                -moz-box-shadow: 0 8px 10px -10px #bdbdbd
+                box-shadow: 0 8px 10px -10px #bdbdbd
+
+                    
+            .card-body
+                margin: .5rem
+
+                .installment-badge 
+                    padding: 4px
+                    background: #fff200
+                    border-radius: 5px
+                    width: min-content
+                    font-size: .85rem
+                    font-weight: normal
+                
 
 .abd
     color: #333741
@@ -453,24 +509,32 @@ footer
     &:hover
         background-color: #274bd8
 
+@media (max-width: 1200px)
+    .products-container .cards
+        grid-template-columns: repeat(4, 1fr) 
+
 @media (max-width: 768px)
     .search-form
         width: 150px
 
     .products-container
-        .card-body
-            padding: 0.7rem
-            h5
-                font-size: 0.8rem
-            .btn-primary
-                font-size: 1rem
-                line-height: 1
-            .card-text
-                margin-bottom: 8px
-        .product-img
-            padding: 0.5rem
+        .cards
+            grid-template-columns: repeat(3, 1fr)
+            .card__card
+                .card-img-container
+                    height: 180px
+                    padding: .4rem
+            
+                .card-body
+                    h5:not(.card-text)
+                        font-size: 1rem
+                    .card-text
+                        margin-bottom: 8px
 
 @media (max-width: 576px)
+    .products-container
+        .cards
+            grid-template-columns: repeat(2, 1fr)
     .inner-products
         flex-direction: column
         .products-filter

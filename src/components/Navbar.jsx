@@ -12,27 +12,6 @@ function Navbar() {
     const state = useSelector((state) => state.handleCart)
     const token = window.localStorage.getItem('token');
 
-    const [navPos, setnavPos] = useState("absolute");
-    const [navFilter, setnavFilter] = useState("blur(0)");
-    const [navColor, setnavColor] = useState("rgb(33,37,41)");
-    const listenScrollEvent = () => {
-        if(window.scrollY > 72) {
-            setnavPos("fixed");
-            setnavFilter("blur(13px)");
-            setnavColor("rgba(0,0,0,.1)");
-        } else{
-            setnavPos("absolute");
-            setnavFilter("blur(0)");
-            setnavColor("rgb(33,37,41)");
-        }
-    };
-    useEffect(() => {
-        window.addEventListener("scroll", listenScrollEvent);
-        return () => {
-            window.removeEventListener("scroll", listenScrollEvent);
-        };
-    }, []);
-
     function changeLang(langVal) {
         window.localStorage.setItem('lang', langVal)
         if(window.localStorage.getItem('lang')) {
@@ -44,8 +23,8 @@ function Navbar() {
 
     return (
         <div className='nav-container'>
-            <div className="Navbar" style={{position: navPos}}>
-                <header className="nav-header" style={{backdropFilter: navFilter, backgroundColor: navColor}}>
+            <div className="Navbar" style={{position: "absolute"}}>
+                <header className="nav-header" style={{ backgroundColor: "rgb(29, 35, 49)" }}>
                     <div className="container">
                         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                             <Link to="/" className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">

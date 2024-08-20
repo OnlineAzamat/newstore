@@ -1,14 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { changeLanguage } from 'i18next';
 1;
 function Footer() {
 	const { t } = useTranslation();
-
-	function changeLang(langVal) {
-		changeLanguage(langVal);
-	}
 
 	return (
 		<footer>
@@ -63,17 +58,6 @@ function Footer() {
 								</li>
 								<li>
 									<Link to="/contact">{t('footer help')}</Link>
-								</li>
-								<li>
-									<select
-										name="lang"
-										className="form-select form-select-lang"
-										onChange={(e) => changeLang(e.target.value)}
-									>
-										<option value="en">en</option>
-										<option value="uz">uz</option>
-										<option value="qq">qq</option>
-									</select>
 								</li>
 							</ul>
 						</div>
