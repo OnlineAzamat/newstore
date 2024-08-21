@@ -14,6 +14,7 @@ import Cart from './components/Cart';
 import Navigation from './components/Navigation';
 import Contact from './components/Contact'
 import Cookie from './components/Cookie'
+import Favorites from './components/Favorites';
 
 function App() {
 	return (
@@ -77,6 +78,16 @@ function App() {
 						<>
 							<Navbar />
 							<Contact />
+							<Footer />
+						</>
+					}
+				/>
+				<Route
+					path="/favorites"
+					element={
+						<>
+							<Navbar />
+							<Favorites />
 							<Footer />
 						</>
 					}

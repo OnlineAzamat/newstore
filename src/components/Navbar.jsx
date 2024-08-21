@@ -49,7 +49,7 @@ function Navbar() {
                                     token ? 
                                     (
                                         <>
-                                            <Link to={"/favourites"} className="me-2">
+                                            <Link to={"/favorites"} className="me-2">
                                                 <button className='favourite-btn'>
                                                     <i className="fa fa-heart" style={{color: "red"}}></i>
                                                 </button>

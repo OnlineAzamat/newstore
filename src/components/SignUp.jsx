@@ -28,25 +28,25 @@ const SignUpPage = () => {
         password: password
     }
     async function getLogin() {
-        try {
-            const {user} = await createUserWithEmailAndPassword(auth, username, password)
-            settoken(user.accessToken)
-            window.localStorage.setItem('token', user.accessToken)
-            console.log(user);
-        } catch (error) {
-            console.log(error.message);
-            setcheck(error.message)
-        }
-        // await axios.post('https://fakestoreapi.com/auth/login', body)
-        //     .then(data => {
-        //         console.log(data)
-        //         settoken(data.data.token)
-        //         window.localStorage.setItem('token', data.data.token)
-        //     })
-        //     .catch(err => {
-        //         console.log(err)
-        //         setcheck(err.response)
-        //     })
+        // try {
+        //     const {user} = await createUserWithEmailAndPassword(auth, username, password)
+        //     settoken(user.accessToken)
+        //     window.localStorage.setItem('token', user.accessToken)
+        //     console.log(user);
+        // } catch (error) {
+        //     console.log(error.message);
+        //     setcheck(error.message)
+        // }
+        await axios.post('https://fakestoreapi.com/auth/login', body)
+            .then(data => {
+                console.log(data)
+                settoken(data.data.token)
+                window.localStorage.setItem('token', data.data.token)
+            })
+            .catch(err => {
+                console.log(err)
+                setcheck(err.response)
+            })
     }
     function analyze() {
         setloading(<button type="submit"><span>Sign Up</span></button>)
@@ -101,7 +101,7 @@ const SignUpPage = () => {
                 {
                     check == undefined ? null :
                     check.status == 401 ? (
-                        <div class="alert alert-danger error" role="alert">
+                        <div className="alert alert-danger error" role="alert">
                             {check.data}
                         </div>
                     ) : null

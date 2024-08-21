@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 function Products() {
+	const navigate = useNavigate();
+	
 	const { t } = useTranslation();
 	const min = useRef(null);
 	const max = useRef(null);
@@ -12,6 +14,7 @@ function Products() {
 	const [data, setdata] = useState([]);
 	const [filter, setFilter] = useState(data);
 	const [loading, setLoading] = useState(false);
+	const [like, setLike] = useState("heart");
 	let componentMounted = true;
 
 	useEffect(() => {
@@ -25,7 +28,6 @@ function Products() {
 			setdata(await response.clone().json());
 			setFilter(await response.json());
 			setLoading(false);
-			console.log(filter);
 		}
 	};
 
@@ -62,6 +64,15 @@ function Products() {
 	}
 
 	const ShowProducts = () => {
+		function toProduct(id) {
+			navigate(`/products/${id}`);
+		}
+
+		function favoriteBtn(id) {
+			window.localStorage.setItem("favorite1", id);
+			// setLike("heart-fill"); // korip shigiw kerek --> cardlardin barligi heart-fill bolmasin
+		}
+		
 		return (
 			<>
 				<div className="buttons d-flex flex-wrap gap-1 justify-content-center mb-5">
@@ -100,22 +111,24 @@ function Products() {
 					{filter[0] ? (
 						filter.map((products) => {
 							return (
-								<Link to={`/products/${products.id}`} className="card__card" key={products.id + products.price}>
-									<div className="card-img-container">
-										<img
-											src={products.image}
-											alt="card-img"
-										/>
-										<button className='favorite-card__button'><i className='bi bi-heart'></i></button>
+								<div className='card-wrapper'>
+									<div onClick={() => toProduct(products.id)} className="card__card" key={products.id + products.price}>
+										<div className="card-img-container">
+											<img
+												src={products.image}
+												alt="card-img"
+											/>
+										</div>
+										<div className="card-body">
+											<h5 className="card-title">
+												{products.title.substring(0, 15)}
+											</h5>
+											<h6 className="installment-badge mt-1">${Math.floor(products.price / 1.2) / 10}/month</h6>
+											<h5 className="card-text">${products.price}</h5>
+										</div>
 									</div>
-									<div className="card-body">
-										<h5 className="card-title">
-											{products.title.substring(0, 15)}
-										</h5>
-										<h6 className="installment-badge mt-1">${Math.floor(products.price / 1.2) / 10}/month</h6>
-										<h5 className="card-text">${products.price}</h5>
-									</div>
-								</Link>
+									<button className='favorite-card__button' onClick={() => favoriteBtn(products.id)}><i className={`bi bi-${like}`}></i></button>
+								</div>
 							);
 						})
 					) : (
