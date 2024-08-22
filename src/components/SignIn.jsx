@@ -106,7 +106,7 @@ const SignInPage = () => {
 					{loading}
 				</form>
 				{check == undefined ? null : check.status == 401 ? (
-					<div class="alert alert-danger error" role="alert">
+					<div className="alert alert-danger error" role="alert">
 						{check.data}
 					</div>
 				) : null}

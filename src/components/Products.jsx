@@ -151,21 +151,21 @@ function Products() {
 			<div className="products-filter">
 				<div data-accordion-item className="bx--accordion__item">
 					<p>Price</p>
-					<div class="input-group mb-3">
-						<span class="input-group-text">$</span>
+					<div className="input-group mb-3">
+						<span className="input-group-text">$</span>
 						<input
 							type="text"
-							class="form-control"
+							className="form-control"
 							aria-label="Amount (to the nearest dollar)"
 							placeholder="min"
 							ref={min}
 						/>
 					</div>
-					<div class="input-group mb-3">
-						<span class="input-group-text">$</span>
+					<div className="input-group mb-3">
+						<span className="input-group-text">$</span>
 						<input
 							type="text"
-							class="form-control"
+							className="form-control"
 							aria-label="Amount (to the nearest dollar)"
 							ref={max}
 							placeholder="max"

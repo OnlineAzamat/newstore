@@ -11,7 +11,7 @@ const Navigation = () => {
 				<li className={location == '/' ? 'list active' : 'list'}>
 					<Link to={'/'}>
 						<span className="icon">
-							<i class="bi bi-house-door"></i>
+							<i className="bi bi-house-door"></i>
 						</span>
 						<span className="text">Home</span>
 						<span className="circle"></span>
@@ -20,7 +20,7 @@ const Navigation = () => {
 				<li className={location == '/products' ? 'list active' : 'list'}>
 					<Link to={'/products'}>
 						<span className="icon">
-							<i class="bi bi-shop"></i>
+							<i className="bi bi-shop"></i>
 						</span>
 						<span className="text">Products</span>
 						<span className="circle"></span>
@@ -29,7 +29,7 @@ const Navigation = () => {
 				<li className={location == '/favourites' ? 'list active' : 'list'}>
 					<Link to={'/'}>
 						<span className="icon">
-							<i class="bi bi-heart"></i>
+							<i className="bi bi-heart"></i>
 						</span>
 						<span className="text">Favourites</span>
 						<span className="circle"></span>
@@ -38,7 +38,7 @@ const Navigation = () => {
 				<li className={location == '/cart' ? 'list active' : 'list'}>
 					<Link to={'/cart'}>
 						<span className="icon">
-							<i class="bi bi-cart"></i>
+							<i className="bi bi-cart"></i>
 						</span>
 						<span className="text">Basket</span>
 						<span className="circle"></span>
@@ -49,7 +49,7 @@ const Navigation = () => {
 						to={window.localStorage.getItem('token') ? '/profile' : '/sign-in'}
 					>
 						<span className="icon">
-							<i class="bi bi-person"></i>
+							<i className="bi bi-person"></i>
 						</span>
 						<span className="text">Account</span>
 						<span className="circle"></span>
